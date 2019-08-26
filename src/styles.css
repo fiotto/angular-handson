@@ -1,1 +1,182 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left; }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+    line-height: 1.2; }
+  
+  .container {
+    margin: 1rem 4rem; }
+  
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    flex: 0 0 25%;
+    max-width: 7.5rem; }
+  
+  .row {
+    margin-bottom: 0.75rem;
+    display: flex;
+    flex-wrap: wrap; }
+  
+  .btn-action {
+    color: #ffffff;
+    background-color: #28a745;
+    border-color: #28a745;
+    margin-left: 0.5rem !important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 1.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .btn-action:focus {
+      outline: 0; }
+    .btn-action:hover {
+      color: #ffffff;
+      background-color: #218838; }
+    .btn-action:not(:disabled) {
+      cursor: pointer; }
+    .btn-action.selected {
+      box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.5); }
+    .btn-action:disabled {
+      opacity: 0.65; }
+  
+  .btn-todo-high {
+    color: #ffffff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    margin-left: 0.5rem !important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 1.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .btn-todo-high:focus {
+      outline: 0; }
+    .btn-todo-high:hover {
+      color: #ffffff;
+      background-color: #c82333; }
+    .btn-todo-high:not(:disabled) {
+      cursor: pointer; }
+    .btn-todo-high.selected {
+      box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5); }
+    .btn-todo-high:disabled {
+      opacity: 0.65; }
+  
+  .btn-todo-normal {
+    color: #000000;
+    background-color: #ffc107;
+    border-color: #ffc107;
+    margin-left: 0.5rem !important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 1.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .btn-todo-normal:focus {
+      outline: 0; }
+    .btn-todo-normal:hover {
+      color: #000000;
+      background-color: #e0a800; }
+    .btn-todo-normal:not(:disabled) {
+      cursor: pointer; }
+    .btn-todo-normal.selected {
+      box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5); }
+    .btn-todo-normal:disabled {
+      opacity: 0.65; }
+  
+  .btn-todo-low {
+    color: #ffffff;
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+    margin-left: 0.5rem !important;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 1.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
+    .btn-todo-low:focus {
+      outline: 0; }
+    .btn-todo-low:hover {
+      color: #ffffff;
+      background-color: #138496; }
+    .btn-todo-low:not(:disabled) {
+      cursor: pointer; }
+    .btn-todo-low.selected {
+      box-shadow: 0 0 0 0.25rem rgba(23, 162, 184, 0.5); }
+    .btn-todo-low:disabled {
+      opacity: 0.65; }
+  
+  .table-bordered {
+    border: 1px solid #dee2e6;
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse; }
+    .table-bordered th, .table-bordered td {
+      padding: 0.75rem;
+      vertical-align: top;
+      border: 1px solid #dee2e6;
+      text-align: center; }
+  
+  .content-center {
+    justify-content: center !important;
+    display: flex !important; }
+  
+  .card {
+    border: 1px solid #007bff !important;
+    padding: 1.25rem; }
+  
+  .text-center {
+    text-align: center !important; }
+  
+  .color-red {
+    color: #dc3545 !important; }
+  
+  .tmp-space {
+    padding: 0.75rem 0.5rem;
+    margin: 1.25rem 0;
+    background: repeating-linear-gradient(to top left, #DCDCDC, #DCDCDC 5px, #F9F9F9 5px, #F9F9F9 10px);
+    background-size: 14px 14px; }
+  
