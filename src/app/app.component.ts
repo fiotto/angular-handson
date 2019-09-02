@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title: string = 'Angular';
+  isSelectdItem: boolean = Math.random() > 0.5;
 }

@@ -61,10 +61,10 @@
   </div>
 
   <div class="tmp-space">
-    重要度の変更を表示 : <span>true</span>
+    重要度の変更を表示 : <span>{{ isSelectdItem }}</span>
   </div>
 
-  <div>
+  <div *ngIf="isSelectdItem">
     <div class="content-center">
       <div class="card">
         <p class="text-center">
