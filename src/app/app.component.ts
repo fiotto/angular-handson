@@ -19,4 +19,5 @@ export class AppComponent {
     normal: ['買い物', '草刈り', 'アイロン'],
     low: ['窓拭き', '振り込み', '家計簿管理']
   };
+  inputItem: string = '';
 }
