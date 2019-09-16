@@ -24,17 +24,29 @@
         <tr>
           <td>
             <p *ngFor="let todo of todos.high">
-              <button type="button" class="btn-todo-high">{{ todo }}</button>
+              <button type="button" 
+                class="btn-todo-high"
+                [class.selected]="todo === selectedItem"
+                (click)="onClickTodo(todo)"
+              >{{ todo }}</button>
             </p>
           </td>
           <td>
             <p *ngFor="let todo of todos.normal">
-              <button type="button" class="btn-todo-normal">{{ todo }}</button>
+              <button type="button" 
+                class="btn-todo-normal"
+                [class.selected]="todo === selectedItem"
+                (click)="onClickTodo(todo)"
+              >{{ todo }}</button>
             </p>
           </td>
           <td>
             <p *ngFor="let todo of todos.low">
-              <button type="button" class="btn-todo-low">{{ todo }}</button>
+              <button type="button" 
+                class="btn-todo-low"
+                [class.selected]="todo === selectedItem"
+                (click)="onClickTodo(todo)"
+              >{{ todo }}</button>
             </p>
           </td>
         </tr>

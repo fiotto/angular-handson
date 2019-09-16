@@ -20,9 +20,14 @@ export class AppComponent {
     low: ['窓拭き', '振り込み', '家計簿管理']
   };
   inputItem: string = '';
+  selectedItem: string | null = null;
 
   addItem(): void {
     this.todos.normal.push(this.inputItem);
     this.inputItem = '';
+  }
+
+  onClickTodo(todo): void {
+    this.selectedItem = todo;
   }
 }
