@@ -13,7 +13,6 @@ interface Todos{
 })
 export class AppComponent {
   title: string = 'Angular';
-  isSelectdItem: boolean = Math.random() > 0.5;
   todos: Todos = {
     high: ['掃除', '洗濯', '炊事'],
     normal: ['買い物', '草刈り', 'アイロン'],
@@ -21,6 +20,10 @@ export class AppComponent {
   };
   inputItem: string = '';
   selectedItem: string | null = null;
+
+  get isSelectdItem(): boolean {
+    return this.selectedItem !== null;
+  }
 
   addItem(): void {
     this.todos.normal.push(this.inputItem);
