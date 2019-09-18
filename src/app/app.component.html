@@ -65,8 +65,14 @@
           <span class="color-red">{{ selectedItem }}</span>の重要度を
         </p>
         <p>
-          <button type="button" class="btn-action" disabled>上げる</button>
-          <button type="button" class="btn-action">下げる</button>
+          <button type="button" class="btn-action"
+            [disabled]="todos.high.includes(selectedItem)"
+            (click)="onClickPriority(1)"
+          >上げる</button>
+          <button type="button" class="btn-action"
+            [disabled]="todos.low.includes(selectedItem)"
+            (click)="onClickPriority(-1)"
+          >下げる</button>
         </p>
       </div>
     </div>
