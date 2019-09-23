@@ -7,10 +7,6 @@
     <button type="button" class="btn-action" (click)="addItem()">追加</button>
   </div>
 
-  <div class="tmp-space">
-    入力値 : <span>{{ inputItem }}</span>
-  </div>
-
   <div>
     <table class="table-bordered">
       <thead>
@@ -52,10 +48,6 @@
         </tr>
       </tbody>
     </table>
-  </div>
-
-  <div class="tmp-space">
-    重要度の変更を表示 : <span>{{ isSelectdItem }}</span>
   </div>
 
   <div *ngIf="isSelectdItem">
